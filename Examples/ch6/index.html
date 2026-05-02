@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Tables</title>
+    </head>
+
+    <body>
+
+        <!--Basic Table Structure-->
+        <h2>Tickets Sold</h2>
+        <table>
+
+            <tr>
+                <th></th>
+                <th scope="col">Saturday</th>
+                <th scope="col">Sunday</th>
+            </tr>
+
+            <tr>
+                <th scope="row">Tickets sold:</th>
+                <td>120</td>
+                <td>135</td>
+            </tr>
+            
+            <tr>
+                <th scope="row">Total sales:</th>
+                <td>$600</td>
+                <td>$675</td>
+            </tr>
+            
+        </table>
+        <br />
+        <hr />
+
+        <!--Spanning Columns-->
+        <h2>School classes</h2>
+        <table>
+            <tr>
+                <th></th>
+                <th>9am</th>
+                <th>10am</th>
+                <th>11am</th>
+                <th>12am</th>
+            </tr>
+
+            <tr>
+                <th>Monday</th>
+                <td colspan="2">Geography</td>
+                <td>Math</td>
+                <td>Art</td>
+            </tr>
+
+            <tr>
+                <th>Tuesday</th>
+                <td colspan="3">Gym</td>
+                <td>Home Ec</td>
+            </tr>
+        </table>
+
+        <br />
+        <hr />
+
+        <!--Spanning Rows-->
+        <h2>Timetable of Final Exams</h2>
+        <table>
+            <tr>
+                <th></th>
+                <th>7:00AM-8:30AM</th>
+                <th>8:30AM-9:30AM</th>
+                <th>9:30AM-10:30AM</th>
+            </tr>
+
+            <tr>
+                <th>Major 1</th>
+                <td rowspan="2">Maths223</td>
+                <td>Maths221</td>
+                <td>Phys345</td>
+            </tr>
+
+            <tr>
+                <th>Major 2</th>
+                <td>Arts101</td>
+                <td>Chem201</td>
+            </tr>
+        </table>
+
+        <br />
+        <hr />
+
+        <!--Long Tables + Styling (OLD METHOD)-->
+        <h2>Income of a Company</h2>
+        <table cellpadding="10" cellspacing="5" border="2" bgcolor="#efefef">
+            <thead>
+                <th width="150">Date</th>
+                <th>Income</th>
+                <th>Expenditure</th>
+                <th width="100" bgcolor="#cccccc">Profit</th>
+            </thead>
+
+            <tbody>
+                <th>January</th>
+                <td bgcolor="#0cf77a">+$2503</td>
+                <td bgcolor="#f70c0c">-$349</td>
+                <th bgcolor="#cccccc"></th>
+            </tbody>
+
+            <tbody>
+                <th>February</th>
+                <td bgcolor="#0cf77a">+$3900</td>
+                <td bgcolor="#f70c0c">-$200</td>
+                <th bgcolor="#cccccc"></th>
+            </tbody>
+
+            <tfoot>
+                <td></td>
+                <td>$6403</td>
+                <td>$549</td>
+                <td bgcolor="#cccccc">+$5854</td>
+            </tfoot>
+        </table>
+    </body>
+</html>
